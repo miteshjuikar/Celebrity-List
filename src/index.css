@@ -1,0 +1,168 @@
+*{
+  font-family:Rubik;
+}
+.App >h1{
+  text-align: center;
+}
+.name{
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+.accordion {
+  width: 300px;
+  margin: auto;
+}
+
+.item {
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  overflow: hidden;
+  width: 400px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.header {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.content {
+  padding: 0px 10px;
+  max-height: 0;
+  font-size: .95rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.active {
+  max-height: 3000px; /* Adjust the max height as needed */
+}
+.logo{
+  height: 39px;
+  border-radius: 50%;
+}
+.showDrop{
+  position: absolute;
+  right: 20px;
+}
+.labelHeader{
+  display: flex;
+  gap: 35px;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px;
+}
+.labelData {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  gap: 4px;
+}
+.labelData > label:nth-child(1){
+  color: gray;
+}
+.description{
+  font-size: 1rem;
+  margin: 5px 10px 10px 10px;
+}
+.descriptionHeader{
+  font-size: 1rem;
+  margin: 15px 0px 0px 10px;
+  color: gray;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input, select, textarea{
+  border-radius: 6px;
+  padding: 3px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+input[type=number]{
+  height: 17px;
+  width: 26px;
+}
+input[type=text]{
+  height: 20px;
+  width: 105px;
+}
+select {
+  height: 27px;
+  width: 97px;
+}
+textarea{
+  width: 350px;
+  height: 145px;
+  padding: 5px;
+  resize: none;
+}
+*:disabled{
+  -moz-appearance: none; 
+  -webkit-appearance: none; 
+  border: none; 
+}
+select:disabled{
+  color: black;
+}
+.name {
+  padding: 5px;
+  height: 24px !important;
+  width: 181px !important;
+}
+.logoBtn {
+  height: 26px;
+  width: 26px;
+  margin-bottom: 10px;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 27px;
+  margin-right: 10px;
+}
+.dialog {
+  position: fixed;
+  top: 37%;
+  left: 37%;
+  border-radius: 10px;
+  height: 129px;
+  border: 1px solid gray;
+  width: 452px;
+  background-color: #fff;
+}
+.dialog > p{
+  font-size: 1.3rem;
+  margin-left: 20px;
+}
+.btnDialog >button:nth-child(2){
+  color: white;
+  background-color: #ff1000;
+  border: none;
+}
+.btnDialog >button{
+  height: 37px;
+  width: 91px;
+  font-size: 1rem;
+  background: none;
+  border: 1.5px solid gray;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+.btnDialog {
+  float: right;
+  margin: 15px;
+}
+.searchInput{
+  height: 32px !important;
+  width: 393px !important;
+  margin-bottom: 15px;
+}
